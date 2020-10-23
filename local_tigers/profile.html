@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>tv</title>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        
+        <script src="js.js"></script>
+        <style>
+            img
+            {
+                 display: inline-block;
+            }
+            body
+            {
+                background: orange;
+            }
+            h1 {
+                
+                text-align: center;
+                font-size:80;
+                color:rgb(0,0,200)
+            }
+        
+        .tv
+            {
+                
+                padding: 60;
+                border: 1px solid blue;
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+
+        <div>
+            <h1>MY PROFILE</h1>
+            <br>
+            <br>
+            <h2>NAME - NARENDRA MODI</h2>
+            <h2>PHONE NUMBER - 999999999</h2>
+            <h2>ADDRESS - XYZ,XYZ</h2>
+            <br>
+            <br>
+            <h2 id="points">POINTS - 10000</h2>
+            <button onClick="cash()">CONVERT TO CASH</button>
+        </div>
+            <script>
+                var p=document.getElementById("points");
+                p.innerHTML=p.innerHTML+points;
+                function cash()
+                {
+                    alert("points coverted to cash");
+                    p.innerHTML="0";
+                    
+                }
+            </script>
+        
+            
+            
+            
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>tv</title>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="js.js"></script>
+        <style>
+            img
+            {
+                 display: inline-block;
+            }
+            body
+            {
+                background: orange;
+            }
+            h1 {
+                
+                text-align: center;
+                font-size:80;
+                color:rgb(0,0,200)
+            }
+        
+        .tv
+            {
+                
+                padding: 60;
+                border: 1px solid blue;
+                background-color: lightgreen;
+            }
+        </style>
+    </head>
+    
+    
+    <body>
+
+            <h1>Smart Television</h1>
+            
+            
+            <div class="tv">
+                <img id="img" style="width:500px; height:300px" src="tv/micromax_1592886745.jpg"></img>
+                <h2>Micromax</h2>
+                <h3 class="price">Rs-45,000</h3>
+                <h3 class="points">Points-5000</h3>
+                <br>
+                <div id="points"></div>
+                <button value=5000 >BUY AND GET 5000 POINTS</button>
+            </div>
+            <div class="tv">
+                <img id="img" style="width:500px; height:300px" src="tv/Sharp-24-LED-TV-C24BC2IN-491600449-i-1-1200Wx1200H.jpg"></img>
+                <h2>Sharp-24-LED-TV</h2>
+                <h3 class="price">Rs-25,000</h3>
+                <h3 class="points">Points-2000</h3>
+                <br>
+                <div id="points"></div>
+                <button value=2000 >BUY AND GET 2000 POINTS</button>
+            </div>
+            <div class="tv">
+                <img id="img" style="width:500px; height:300px" src="tv/thomson-tv-1595071000.jpg"></img>
+                <h2>Thomson</h2>
+                <h3 class="price">Rs-50,000</h3>
+                <h3 class="points">Points-5000</h3>
+                <br>
+                <div id="points"></div>
+                <button value=5000 >BUY AND GET 5000 POINTS</button>
+            </div>
+            <div class="tv">
+                <img id="img" style="width:500px; height:300px" src="tv/haier.jpg"></img>
+                <h2>Haier</h2>
+                <h3 class="price">Rs-30,000</h3>
+                <h3 class="points">Points-3000</h3>
+                <br>
+                <div id="points"></div>
+                <button value=3000 >BUY AND GET 3000 POINTS</button>
+            </div>
+            <div class="tv">
+                <img id="img" style="width:500px; height:300px" src="tv/lg.jpg"></img>
+                <h2>L.G</h2>
+                <h3 class="price">Rs-45,000</h3>
+                <h3 class="points">Points-4000</h3>
+                <br>
+                <div id="details"></div>
+                <button value=4000 >BUY AND GET 4000 POINTS</button>
+            </div>
+            <script>
+                $("button").click(function() {
+                    var fired_button = $(this).val();
+                                  points=parseInt(fired_button)+parseInt(points);
+                                 
+                                  
+                    alert("Demo:Successfull purchase now you have "+points+" points");
+                });
+            </script>
+    </body>
+</html>
